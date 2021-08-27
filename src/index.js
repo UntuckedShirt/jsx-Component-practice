@@ -12,12 +12,12 @@ import CommentDetail from './CommentDetail'
 const App = () => {
     return (
         <div className="ui container comments">
-     {/*parent component*/}{/*prop}*/}
-            <CommentDetail author="Nate" />
-            <CommentDetail author="Jate"/>
-            <CommentDetail author="Sate"/>
-            <CommentDetail author="Kate"/>
-            <CommentDetail author="Plate"/>
+    {/*parent component*/}   {/*prop}*/}          {/*prop value*/}                {/*refrencing a JS varaible use curlys*/}
+            <CommentDetail author="Nate" timeAgo="Today at 4:45pm" posts="Hey there" avatar={faker.image.avatar()}/>
+            <CommentDetail author="Jate" timeAgo="Ysterday at 5:25pm" posts="Pleasure is all mine" avatar={faker.image.avatar()}/>
+            <CommentDetail author="Sate" timeAgo="Yesterday at 3:25pm" posts="Feeling stressed" avatar={faker.image.avatar()}/>
+            <CommentDetail author="Kate" timeAgo="Today at at 7:56pm" posts="Going camping tommorow" avatar={faker.image.avatar()}/>
+            <CommentDetail author="Plate" timeAgo="Today at 9:33pm" posts="Hey pilgrim" avatar={faker.image.avatar()}/>
             
         </div>
     );
